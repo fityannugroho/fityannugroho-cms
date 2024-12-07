@@ -7,19 +7,72 @@ export const Code: Block = {
     {
       name: 'language',
       type: 'select',
-      defaultValue: 'typescript',
+      defaultValue: 'tsx',
       options: [
+        // See supported languages in https://github.com/FormidableLabs/prism-react-renderer?tab=readme-ov-file#language
         {
-          label: 'Typescript',
-          value: 'typescript',
+          label: 'Typescript (ts, tsx)',
+          value: 'tsx',
         },
         {
-          label: 'Javascript',
-          value: 'javascript',
+          label: 'Javascript (js, jsx)',
+          value: 'jsx',
         },
         {
-          label: 'CSS',
-          value: 'css',
+          label: 'HTML',
+          value: 'markup',
+        },
+        {
+          label: 'JSON',
+          value: 'json',
+        },
+        {
+          label: 'Swift',
+          value: 'swift',
+        },
+        {
+          label: 'Kotlin',
+          value: 'kotlin',
+        },
+        {
+          value: 'objectivec',
+          label: 'Objective-C',
+        },
+        {
+          label: 'Python',
+          value: 'python',
+        },
+        {
+          label: 'Markdown',
+          value: 'markdown',
+        },
+        {
+          label: 'C++',
+          value: 'cpp',
+        },
+        {
+          label: 'Go',
+          value: 'go',
+        },
+        {
+          label: 'YAML',
+          value: 'yaml',
+        },
+        {
+          label: 'GraphQL',
+          value: 'graphql',
+        },
+        {
+          label: 'Rust',
+          value: 'rust',
+        },
+        {
+          label: 'Reason',
+          value: 'reason',
+        },
+        {
+          label: 'JS Extras',
+          value: 'js-extras',
         },
       ],
     },
