@@ -1,8 +1,8 @@
 import { Button, type ButtonProps } from '@/components/ui/button'
+import type { Post } from '@/payload-types'
+import { cn } from '@/utils/cn'
 import Link from 'next/link'
 import type React from 'react'
-import { cn } from '@/utils/cn'
-import type { Post } from '@/payload-types'
 
 type CMSLinkType = {
   appearance?: 'inline' | ButtonProps['variant']
@@ -34,9 +34,7 @@ export const CMSLink: React.FC<CMSLinkType> = (props) => {
 
   const href =
     type === 'reference' && typeof reference?.value === 'object' && reference.value.id
-      ? `${`/${reference?.relationTo}`}/${
-          reference.value.id
-        }`
+      ? `${`/${reference?.relationTo}`}/${reference.value.id}`
       : url
 
   if (!href) return null

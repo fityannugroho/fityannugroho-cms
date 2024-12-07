@@ -1,11 +1,11 @@
 'use client'
 
 import { cssVariables } from '@/cssVariables'
+import { cn } from '@/utils/cn'
 import { getClientSideURL } from '@/utils/getURL'
 import type { StaticImageData } from 'next/image'
 import NextImage from 'next/image'
 import type React from 'react'
-import { cn } from '@/utils/cn'
 import type { Props as MediaProps } from '../types'
 
 const { breakpoints } = cssVariables

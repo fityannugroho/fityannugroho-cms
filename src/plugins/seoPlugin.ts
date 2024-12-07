@@ -1,4 +1,4 @@
-import { Post } from '@/payload-types'
+import type { Post } from '@/payload-types'
 import { getServerSideURL } from '@/utils/getURL'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import type { GenerateTitle, GenerateURL } from '@payloadcms/plugin-seo/types'
