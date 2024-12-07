@@ -12,7 +12,8 @@
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint && biome check .",
+    "lint:fix": "cross-env NODE_OPTIONS=--no-deprecation next lint && biome check --write .",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
@@ -40,6 +41,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@tailwindcss/typography": "^0.5.15",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.10.1",
