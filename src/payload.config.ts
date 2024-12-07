@@ -1,13 +1,13 @@
-import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
-import path from 'path'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import { buildConfig } from 'payload'
-import { fileURLToPath } from 'url'
-import { Users } from './collections/Users'
+import { Categories } from './collections/Categories'
 import { Media } from './collections/Media'
 import { Posts } from './collections/Posts'
-import { Categories } from './collections/Categories'
+import { Users } from './collections/Users'
 import seoPlugin from './plugins/seoPlugin'
 
 const filename = fileURLToPath(import.meta.url)
